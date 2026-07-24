@@ -42,7 +42,7 @@ http://your-server-ip
 ## Clone Project
 
 ``` bash
-git clone https://github.com/jaiswaladi246/static-site.git
+git clone https://github.com/AvikCodeCrafter/Nginx-Multi-Projects.git
 cd static-site
 ```
 
