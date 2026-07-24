@@ -43,7 +43,7 @@ http://your-server-ip
 
 ``` bash
 git clone https://github.com/AvikCodeCrafter/Nginx-Multi-Projects.git
-cd static-site
+cd nginx-static-website
 ```
 
 ## Step 1: Create Web Root
