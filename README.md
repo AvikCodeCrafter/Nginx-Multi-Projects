@@ -78,7 +78,7 @@ server {
 ## Step 3: Enable Site
 
 ``` bash
-sudo ln -s /etc/nginx/sites-available/nginx-static-website /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/nginx-static-website.conf /etc/nginx/sites-enabled/nginx-static-website.conf
 sudo nginx -t
 sudo systemctl reload nginx
 ```
