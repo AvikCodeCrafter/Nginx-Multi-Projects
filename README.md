@@ -49,15 +49,15 @@ cd nginx-static-website
 ## Step 1: Create Web Root
 
 ``` bash
-sudo mkdir -p /var/www/static-site
-sudo cp -r * /var/www/static-site
-sudo chown -R www-data:www-data /var/www/static-site
+sudo mkdir -p /var/www/nginx-static-website
+sudo cp -r * /var/www/nginx-static-website
+sudo chown -R www-data:www-data /var/www/nginx-static-website
 ```
 
 ## Step 2: Create Virtual Host
 
 ``` bash
-sudo nano /etc/nginx/sites-available/static-site
+sudo nano /etc/nginx/sites-available/nginx-static-website
 ```
 
 Paste:
@@ -66,7 +66,7 @@ Paste:
 server {
     listen 80;
     server_name yourdomain.com;
-    root /var/www/static-site;
+    root /var/www/nginx-static-website;
     index index.html;
 
     location / {
@@ -78,7 +78,7 @@ server {
 ## Step 3: Enable Site
 
 ``` bash
-sudo ln -s /etc/nginx/sites-available/static-site /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/nginx-static-website /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
 ```
